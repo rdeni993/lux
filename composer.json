@@ -1,0 +1,28 @@
+{
+    "name": "rdeni/lux",
+    "description": "LaravelUniqueExperience",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rdeni\\Lux\\": "src/",
+            "Rdeni\\Lux\\Database\\Seeders\\" : "database/seeders/",
+            "Rdeni\\Lux\\Database\\Factories\\" : "database/factories/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rdeni993",
+            "email": "denis_r_home@yahoo.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "extra": {
+        "laravel" : {
+            "providers" : [
+                "Rdeni\\Lux\\Providers\\LuxServiceProvider"
+            ]
+        }
+    }
+}

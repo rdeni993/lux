@@ -11,7 +11,7 @@ class LuxServiceProvider extends ServiceProvider
      */
     protected array $providers = [
         LuxConfigProvider::class, // Load configuration file
-        LuxConfigProvider::class, // Load migrations
+        LuxMigrationsProvider::class, // Load migrations file
     ];
 
     /**

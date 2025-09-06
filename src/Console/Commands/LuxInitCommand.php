@@ -23,6 +23,9 @@ class LuxInitCommand extends Command
      */
     protected $description = 'Initialize base data for lux package';
 
+    /**
+     * @return Command::SUCCESS | Command::FAILURE
+     */
     public function handle()
     {
         try {

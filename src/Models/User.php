@@ -11,7 +11,7 @@ class User extends ModelsUser
     use HasRoles;
 
     /**
-     * @connect User
+     * @connect UserFactory
      */
     protected static function newFactory()
     {

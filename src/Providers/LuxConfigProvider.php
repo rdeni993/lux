@@ -14,7 +14,7 @@ class LuxConfigProvider extends ServiceProvider
         // Load Global settings from file
         $this->mergeConfigFrom(
             __DIR__ . "/../../config/global.php",
-            'lux.global'
+            'lux'
         );
     }
 }

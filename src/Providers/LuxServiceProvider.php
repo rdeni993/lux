@@ -13,6 +13,7 @@ class LuxServiceProvider extends ServiceProvider
         LuxConfigProvider::class, // Load configuration file
         LuxMigrationsProvider::class, // Load migrations file
         LuxCommandsProvider::class, // Load commands we need
+        LuxOverrideUserModelProvider::class, // Override User model with our instance
     ];
 
     /**

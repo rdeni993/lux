@@ -1,5 +1,6 @@
 {
     "name": "rdeni/lux",
+    "version": "1.0.0",
     "description": "LaravelUniqueExperience",
     "type": "library",
     "license": "MIT",
@@ -17,7 +18,10 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "spatie/laravel-data": "^4.17",
+        "spatie/laravel-permission": "^6.21"
+    },
     "extra": {
         "laravel" : {
             "providers" : [

@@ -12,9 +12,13 @@ class LuxServiceProvider extends ServiceProvider
     protected array $providers = [
         LuxRoutesProvider::class, // Load routes
         LuxConfigProvider::class, // Load configuration file
+        LuxViewsProvider::class, // Load views
         LuxMigrationsProvider::class, // Load migrations file
         LuxCommandsProvider::class, // Load commands we need
-        LuxOverrideUserModelProvider::class, // Override User model with our instance
+        LuxOverrideUserModelProvider::class, // Override User model with our instance,
+        LuxEventsProvider::class, // Load events
+        LuxBindingProvider::class, // Bind strategies
+        LuxRedirectAuthenticatedUsersToRouteProvider::class, // Redirect logged users from guests pages
     ];
 
     /**

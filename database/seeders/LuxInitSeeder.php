@@ -12,8 +12,8 @@ class LuxInitSeeder extends Seeder
      * @var array
      */
     protected array $seeders = [
-        SeedUsers::class, // Seed users
         SeedRoles::class, // Seed roles
+        SeedUsers::class, // Seed users
     ];
 
     /**

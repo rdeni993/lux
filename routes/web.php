@@ -22,7 +22,9 @@ if(! defined('PROTECTED_ROUTES')) {
 Route::middleware([
     'web',
     'auth',
-])->group(ADMIN_ROUTES);
+])
+->prefix('admin')
+->group(ADMIN_ROUTES);
 
 /**
  * ======================

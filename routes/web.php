@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Rdeni\Lux\Middleware\AdminProtected;
 
 if(! defined('AUTH_ROUTES')) {
     define('AUTH_ROUTES', __DIR__ . "/auth.php");
@@ -22,6 +23,7 @@ if(! defined('PROTECTED_ROUTES')) {
 Route::middleware([
     'web',
     'auth',
+    AdminProtected::class
 ])
 ->prefix('admin')
 ->group(ADMIN_ROUTES);

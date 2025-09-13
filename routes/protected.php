@@ -15,4 +15,7 @@ use Rdeni\Lux\Controllers\ProfileController;
 
     // Profile page
     // Open any version of profile
-    Route::get('/profile/{user?}', [ProfileController::class , 'index'])->name('profile');
+    Route::get('/profile/{user?}', [
+        ProfileController::class ,
+        'index'
+    ])->name('profile');

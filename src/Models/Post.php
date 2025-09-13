@@ -8,18 +8,26 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Post extends Model
 {
     /**
-     * @return string
+     * @var string
      */
     protected $table = 'posts';
 
     /**
-     * @return array
+     * @var array
+     */
+    protected $attributes = [
+        'status' => 'draft'
+    ];
+
+    /**
+     * @var array
      */
     protected $fillable = [
         'title', // required by user
         'slug', // auto. generated
         'body', // nullable
-        'user_id' // auto. injected
+        'status', // draft is default
+        'user_id', // auto. injected
     ];
 
     /**

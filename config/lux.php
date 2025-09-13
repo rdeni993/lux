@@ -32,4 +32,12 @@ return [
  * users to another page.
  */
     'redirectAuthenticatedUsersToRoute' => '/profile',
+
+/**
+ * ======================
+ * Default post status
+ * ======================
+ * Allowed draft|pending|published|archived|deleted
+ */
+    'defaultPostStatus' => 'pending',
 ];
